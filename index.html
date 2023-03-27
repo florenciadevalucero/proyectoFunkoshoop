@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunkoShop</title>
+    <link rel="preload" href="CSS/estilos.css" as="style">
+    <!-- Con este link le decimos que cargue mas rapido la hoja de estilos-->
+    <link rel="stylesheet" href="CSS/estilos.css">
+
+</head>
+<body>
+    <!-- INICIO HEADER -->
+    <header>
+        <nav>
+            <picture>
+                <a href="./index.html">
+                    <!-- Para contener la imagen y el enlace usamos la etiqueta picture -->
+                    <img src="./img/branding/logo_light_horizontal.svg" alt=" logo de la página">
+                </a>
+            </picture>
+            
+            <!-- Ponemos el logo lo ponemos en nav porque queremos que 
+            funcione como enlace -->
+            <ul>
+                <li><a href="./paginas/shop.html">SHOP</a></li>
+                <li><a href="./paginas/contact.html">CONTACT</a></li>
+                <li><a href="./paginas/login.html">LOGIN</a></li>
+                <li>
+                    <a href="./paginas/carrito.html">
+                        <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- fin header -->
+
+    <main>
+        <!-- El barner vendria a hacer  Espacio publicitario insertado en una página de internet. -->
+        <section>
+            <article>
+                <h1>Nuevos Ingresos</h1>
+                <p>Descubri el próximo Funko Pop de tu colección</p>
+                <a href="./paginas/shop.html">SHOP</a>
+                <!-- Para la imagen de fondo la agregamos como background en css -->
+            </article>
+        </section>
+
+
+        <section>
+            <article>
+                <h3>Star Wars & The Mandalorian</h3>
+                <p>Disfruta de una saga que sigue agregando personajes a su colección</p>
+                <a href="./paginas/shop.html">Ver Colección</a>   
+            </article>
+            <picture>
+                <img src="./img/star-wars/baby-yoda-1.webp" alt="Bebe yoda"> 
+            </picture>
+        </section>
+
+        <section>
+            <article>
+                <h3>Pokemon Indigo</h3>
+                <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos</p>
+                <a href="./paginas/shop.html">Ver colección</a>
+            </article>
+            
+            <picture>
+                <img src="./img/pokemon/vulpix-1.webp" alt="POKEMON Indigo">
+            </picture>
+        </section>
+        
+        <section>
+            <article>
+                <h3>Harry Potter</h3>
+                <p>Revive los recuerdos de una saga llena de magia y encanto<</p>
+                <a href="./paginas/shop.html">Ver colección</a>
+            </article>
+           
+            <picture>
+                <img src="./img/harry-potter/snape-patronus-1.webp" alt="Harry Potter">
+            </picture>
+        </section>
+               
+                
+
+       
+        <section>
+            <h2>ULTIMOS LANZAMIENTOS</h2>
+            <!-- como queremos que al seleccionar tanto la imagen del
+                 articulo, como el titulo del articulo nos lleve a
+                la pagina del articulo solo ponemos todo en la etiqueta
+                 de enlace a -->
+            <ul>
+                <li>
+                    <article>
+                        <a href="./paginas/#">
+                            <picture>
+                                <img src="./img/star-wars/trooper-1.webp" alt="trooper de star wars">
+                            </picture>
+                            <!-- separamos la imagen con la info del articulo -->
+                            <div>
+                                <p>STAR WARS</p>
+                                <h4>StormTrooper Lightsaber</h4>
+                                <p>$1799,99.-</p>
+                                <p>3 Coutas sin interés</p>
+                            </div>        
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="./paginas/#">
+                            <picture>
+                                <img src="./img/pokemon/pidgeotto-1.webp" alt="ARTICULO Pidgeotto DE POKEMON">
+                            </picture>
+                            <div>
+                                <p>Pokemon</p> 
+                                <h4>Pidgeotto</h4>
+                                <p>$1799,99.-</p>
+                                <p>3 Coutas sin interés</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="">
+                            <picture>
+                                <img src="./img/harry-potter/luna-1.webp" alt="">
+                            </picture>
+                            <div>
+                                <p>HARRY POTTER</p>
+                                <h4>LUNA LOVEGOOD LION MASK</h4>
+                                <p>$1799,99.-</p>
+                                <p>3 Cuotas sin interés</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./paginas/shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="./paginas/register.html">REGISTRARSE</a>
+                    </li>
+                    <li>
+                        <a href="./paginas/login.html">INGRESAR</a>
+                    </li>
+                    <li>
+                        <a href="./paginas/contact.html">CONTACTO</a>  
+                    </li>
+                </ul>
+ 
+                <picture>
+                    <img src="./img/branding/isotype.svg" alt="logo de funkoshop">
+                </picture>
+            </nav>
+        </section>
+        <p>All rights reserved 2022- Funkoshoop &copy</p>
+    </footer>
+    
+    
+</body>
+</html>

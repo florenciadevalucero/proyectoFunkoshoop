@@ -1,0 +1,31 @@
+/* 1 REM = 10 px */
+
+/*Acá vamos a poner los colores que estamos usando
+Guardandolos como variables*/
+:root {
+    --azulOscuro: #30343F;
+    --blanco: #FAFAFF;
+}
+* {
+    margin: 0px;
+    
+}
+/* 
+header {
+    height: 30.308128356933594px;
+    width: 270.9243469238281px;
+    left: 101.07568359375px;
+    top: 17.71435546875px;
+    border-radius: 0px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    color: var(--blanco);
+
+    background: var(--azulOscuro);
+}
+nav {
+    text-align: right;
+} */
