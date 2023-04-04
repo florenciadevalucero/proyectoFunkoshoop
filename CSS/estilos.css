@@ -3,8 +3,7 @@
 /*Acá vamos a poner los colores que estamos usando
 Guardandolos como variables*/
 :root {
-    --azulOscuro: #30343F;
-    --blanco: #FAFAFF;
+    
 }
 * {
     margin: 0px;

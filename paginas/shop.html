@@ -8,22 +8,52 @@
 </head>
 <body>
     <header>
-        <section>
-            <img src="/CSS/logos/Vector.png" alt="logo">
-            FUNKOSHOP
-        </section>
-
         <nav>
+            <picture>
+                <a href="./index.html">
+                    <!-- Para contener la imagen y el enlace usamos la etiqueta picture -->
+                    <img src="../img/branding/logo_light_horizontal.svg" alt=" logo de la página">
+                </a>
+            </picture>
+            
+            <!-- Ponemos el logo lo ponemos en nav porque queremos que 
+            funcione como enlace -->
             <ul>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">LOGIN</a></li>
-                <li><a href="#">CARRITO</a></li>
+                <li><a href="./paginas/shop.html">SHOP</a></li>
+                <li><a href="./paginas/contact.html">CONTACT</a></li>
+                <li><a href="./paginas/login.html">LOGIN</a></li>
+                <li>
+                    <a href="./paginas/carrito.html">
+                        <img src="../img/icons/cart-icon.svg" alt="icono de carrito">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <aside>
+            <form action="index.hmtl" method="GET">
+                <ul>
+                    <li>
+                        <label for="text">BUSCAR</label>
+                        <div>
+                            <input type="text" name="buscador" value="Item o categoría">   
+                        </div>
+                            
+                    </li>
+                    <li>
+                        <label for="index.html">ORDENAR POR</label>
+                        <div>
+                            <select name="ordenar" id="ordenar">
+                                <option value="mayor">Menor a mayor</option>
+                                <option value="menor">Mayor a menor</option>
+                            </select> 
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </aside>
         <article>
             <img src="#" alt="STORMTROOPER">
             <span>STAR WARS</span>
