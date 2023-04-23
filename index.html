@@ -14,8 +14,8 @@
 <body>
     <!-- INICIO HEADER -->
     <header>
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar--logo">
                 <a href="./index.html">
                     <!-- Para contener la imagen y el enlace usamos la etiqueta picture -->
                     <img src="./img/branding/logo_light_horizontal.svg" alt=" logo de la página">
@@ -24,12 +24,32 @@
             
             <!-- Ponemos el logo lo ponemos en nav porque queremos que 
             funcione como enlace -->
-            <ul>
-                <li><a href="./paginas/SHOP/shop.html">SHOP</a></li>
-                <li><a href="./paginas/admin/contact.html">CONTACT</a></li>
-                <li><a href="./paginas/admin/login.html">LOGIN</a></li>
-                <li>
-                    <a href="./paginas/admin/carrito.html">
+            <ul class="navbar--menu">
+                <li class="navbar--item">
+                    <a class="navbar--link width-icon" href="./paginas/SHOP/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu--item">
+                            <a href="submenu--link">FUNKOS</a>
+                        </li>
+                        <li class="submenu--item">
+                            <a href="submenu--link">Remeras</a>
+                        </li>
+                        <li class="submenu--item">
+                            <a href="submenu--link">LLaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar--item">
+                    <a class="navbar--link"href="./paginas/admin/contact.html">CONTACT
+                    </a>
+                </li>
+                <li class="navbar--item">
+                    <a class="navbar--link"href="./paginas/admin/login.html">LOGIN
+                    </a>
+                </li>
+                <li class="navbar--item">
+                    <a class="navbar--cart" href="./paginas/admin/carrito.html">
                         <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
                     </a>
                 </li>
@@ -102,6 +122,7 @@
                                 <img src="./img/star-wars/trooper-1.webp" alt="trooper de star wars">
                             </picture>
                             <!-- separamos la imagen con la info del articulo -->
+                            
                             <div>
                                 <p>STAR WARS</p>
                                 <h4>StormTrooper Lightsaber</h4>
@@ -111,6 +132,7 @@
                         </a>
                     </article>
                 </li>
+
                 <li>
                     <article>
                         <a href="./paginas/#">
@@ -128,7 +150,7 @@
                 </li>
                 <li>
                     <article>
-                        <a href="">
+                        <a href="./paginas/#">
                             <picture>
                                 <img src="./img/harry-potter/luna-1.webp" alt="">
                             </picture>
@@ -168,9 +190,11 @@
                 </picture>
             </nav>
         </section>
-        <p>All rights reserved 2022- Funkoshoop &copy</p>
+
+        <p> All rights reserved 2022- Funkoshoop &copy </p>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     
 </body>
 </html>

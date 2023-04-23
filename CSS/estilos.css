@@ -35,13 +35,15 @@ Guardandolos como variables*/
     --font-xlarge: 3em;
     --font-large: 2.4em;
     --font-medium: 1.8em;
-    --font-small: 1.2em;
+    --font-small: 1.4em;
 
     /* espacios, margenes /Spacings */
     --spacing-128: 12.8rem;
     --spacing-68: 6.8rem;
     --spacing-36: 3.6rem;
     --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem; 
@@ -66,7 +68,6 @@ html {
 
 a {
     text-decoration: none;
-    font-size: 2em;
     font-family: var(--base-font);
     color: inherit;
 }
@@ -84,8 +85,65 @@ ul, ol {
 p {
     font-size: 1.8em;
 }
+img{
+    /* NORMALIZAMOS LA ETIQUETA, 100% quiere decir que siempre va a tener el 100%
+    del ancho de su contenedor padre */
+    width: 100%;
+}
 
 .container{
-    max-width: 120px;
+    max-width: 1200px;
     margin: 0 auto;
 }
+/* Para alinear el dibujito al lado de un enlace */
+
+/***************** HEADER *******************/
+header{
+    background-color: var(--bg-black-solid);
+    padding: var(--spacing-36);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar--logo{
+    /* Las imagenes al ser ETIQUETAS EN LINEA al poner un ancho maximo
+    al contenedor, no les importa, la imagen tiene overflow, se escapa
+    PARA EVITAR ESTAS CUESTIONES, normalmente se tiene que normalizar la etiqueta 
+    img, todas sus aplicaciones  */
+    max-width: 300px;
+}
+
+.navbar--menu{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+    /* Distancia para los elementos del menu con GAP */
+}
+
+.navbar--link{
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+}
+.navbar--link:hover{
+    background-color: var(--primary-900);
+}
+.width-icon{
+    display: flex;
+    align-items: center;
+    /* GAP para espacios CON DISPLAY FLEX */
+    gap: var(--spacing-8);
+}
+
+.submenu{
+    /* Para OCULTAR este menu de la pagina 
+    vamos a darle un position: absolute */
+    position: absolute;
+
+}
+
