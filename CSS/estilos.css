@@ -129,6 +129,9 @@ header{
     padding: var(--spacing-8) var(--spacing-16);
     display: inline-block;
     transition: background .3s ease-in-out;
+    /* POSITION RELATIVE: para que el submenu sea relativo al padre  
+    no al body de la pagina */
+    position: relative;
 }
 .navbar--link:hover{
     background-color: var(--primary-900);
@@ -140,10 +143,31 @@ header{
     gap: var(--spacing-8);
 }
 
+/* Para que el submenu de SHOP no este a la vista, a salvo que se haga click sobre shop */
+.width-submenu:hover .submenu{
+    display: block;
+}
+
 .submenu{
     /* Para OCULTAR este menu de la pagina 
     vamos a darle un position: absolute */
     position: absolute;
+    background-color: var(--bg-black-solid);
+    /* none en dsiplay oculta el submenu y como arriba le pusimos propiedades a hover */
+    display: none;
+    width: 300px;
+    
+}
+
+.submenu--item{
+    /* Para poder darle tamaño al elemento display: block */
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
 
 }
 
+.submenu--link:hover{
+    background-color: var(--primary-900);
+    
+}
