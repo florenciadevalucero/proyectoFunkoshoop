@@ -136,6 +136,7 @@ header{
 .navbar--link:hover{
     background-color: var(--primary-900);
 }
+
 .width-icon{
     display: flex;
     align-items: center;
@@ -156,6 +157,7 @@ header{
     /* none en dsiplay oculta el submenu y como arriba le pusimos propiedades a hover */
     display: none;
     width: 300px;
+    z-index: 3;
     
 }
 
@@ -169,7 +171,6 @@ header{
 
 .submenu--link:hover{
     background-color: var(--primary-900);
-
 }
 /* ************* BARNER *********** */
 .hero{
@@ -230,11 +231,12 @@ header{
     color: var(--light-font-solid);
 }
 
-/* COLECCIONES / COLLECTIONS */
+/************ COLECCIONES / COLLECTIONS ***************/
 .collection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    padding: var(--spacing-16) 0;
 }
 /* Esto va a ser para que la imagen de coleccion aparezca del otro lado */
 .collection:nth-child(2) .collection--cover{
@@ -274,3 +276,81 @@ header{
     transition: background .3s ease-in-out;
 
 }
+
+/* ****** SLIDER / ultimos lanzamientos *********/
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    margin: var(--spacing-68) auto;
+}
+
+.slider--title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    text-transform: uppercase;
+}
+
+.slider--items{
+    display: flex;
+    gap: var(--spacing-24); 
+}
+
+.card-item{
+    /* background-color:  ; */
+}
+.card-item--cover{
+    display: flex;
+    position: relative;
+}
+.card-item--tag{
+    font-size: x-small;
+    text-transform: uppercase;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
+    position: absolute;
+    right: 0%;
+}
+.card-item--cover img{
+    animation: fade .7s;
+}
+
+
+
+.card-item--img--back{
+    display: none;
+}
+.card-item--cover:hover .card-item--img--back{
+    display: block;
+}
+.card-item--cover:hover .card-item--img--front{
+    display: none;
+}
+
+.card-item--content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    padding: var(--spacing-16);
+}
+
+.card-item--licence{
+   font-size: var(--font-small);
+   font-weight: 500; 
+}
+.card-item--name{
+    font-size: var(--font-medium);
+    font-weight: 700; 
+ }
+
+ .card-item--precio{
+    font-size: var(--font-small);
+ 
+ }
+ .card-item--promo{
+    font-size: var(--font-small);
+    color: var(--secondary-solid);
+    font-weight: 700; 
+ }
